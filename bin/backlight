@@ -1,12 +1,11 @@
 #!/bin/bash
 
 values=(0 1 2 4 8 10 12 14 16 18 20 22 24)
-#backlight="/sys/class/backlight/intel_backlight"
-backlight="/sys/devices/pci0000:00/0000:00:02.0/backlight/acpi_video0"
+backlight="/sys/class/backlight/acpi_video0"
 
 # Change the brightness of the backlight to the given value.
 #
-# Parameters :	<brightness> 	The brightness as numerical value in range 0-648
+# Parameters :	<brightness> 	The brightness as numerical value in range 0-24
 #
 function setBackLight {
 	local brightness=${1}
