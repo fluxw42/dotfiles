@@ -5,4 +5,5 @@
 
 xrandr --output DP1 --auto
 xrandr --output VGA1 --auto --right-of DP1
+xsetroot -solid "#333333"
 
