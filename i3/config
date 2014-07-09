@@ -161,4 +161,5 @@ workspace 6 output VGA1
 workspace 8 output VGA1
 workspace 10 output VGA1
 
+exec --no-startup-id xsetroot -solid "#333333"
 
