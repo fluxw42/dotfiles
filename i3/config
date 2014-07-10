@@ -161,5 +161,7 @@ workspace 6 output VGA1
 workspace 8 output VGA1
 workspace 10 output VGA1
 
+for_window [class="Gcalctool" instance="gcalctool"] floating enable
+
 exec --no-startup-id xsetroot -solid "#333333"
 
