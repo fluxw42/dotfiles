@@ -163,5 +163,8 @@ workspace 10 output VGA1
 
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 
-exec --no-startup-id xsetroot -solid "#333333"
+# Enable numlock by default.
+exec --no-startup-id numlockx on
 
+# Change the background color to a grayish color
+exec --no-startup-id xsetroot -solid "#333333"
