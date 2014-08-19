@@ -1,7 +1,11 @@
+set fileencoding=utf-8
+set encoding=utf-8
+
 set tabstop=4
 set number
+set encoding=utf-8
 
-"set list
+set list
 set listchars=tab:⇥\ ,trail:·
 "set listchars=tab:▶\ ,trail:·
 "set listchars+=eol:¤
