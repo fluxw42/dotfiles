@@ -172,11 +172,8 @@ workspace 12 output VGA1
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
 
-# Enable numlock by default.
-exec --no-startup-id numlockx on
-
-# Change the background color to a grayish color
-exec --no-startup-id xsetroot -solid "#333333"
-
-# Try to autoconfigure the screens
-exec --no-startup-id autoscreen
+# Startup apps
+exec --no-startup-id numlockx on				# Enable numlock by default
+exec --no-startup-id xsetroot -solid "#333333"	# Change the background color to a grayish color
+exec --no-startup-id autoscreen					# Try to autoconfigure the screens
+#exec --no-startup-id nm-applet					# The network manager applet
