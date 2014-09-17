@@ -20,7 +20,7 @@ function linkFile() {
 }
 
 linkFolder ~/dotfiles/bin ~/bin
-linkFolder ~/dotfiles/i3 ~/.i3
+linkFolder ~/dotfiles/.i3 ~/.i3
 
-linkFile ~/dotfiles/i3status.conf ~/.i3status.conf
-linkFile ~/dotfiles/vimrc ~/.vimrc
+linkFile ~/dotfiles/.i3status.conf ~/.i3status.conf
+linkFile ~/dotfiles/.vimrc ~/.vimrc
