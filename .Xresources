@@ -1,30 +1,43 @@
-URxvt.scrollBar: false
+!Xft.autohint: true
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.hintstyle: hintslight
+!Xft.dpi: 96
+!Xft.rgba: rgb
+!Xft.lcdfilter: lcddefault
+
+
+URxvt*scrollBar: false
 
 URxvt*background: #000000
 URxvt*foreground: #FFFFFF
 
-URxvt*color0: #000000
-URxvt*color1: #CC0000
-URxvt*color2: #4E9A06
-URxvt*color3: #C4A000
-URxvt*color4: #3465A4
-URxvt*color5: #75507B
-URxvt*color6: #06989A
-URxvt*color7: #D3D7CF
-URxvt*color8: #555753
-URxvt*color9: #EF2929
-URxvt*color10: #8AE234
-URxvt*color11: #FCE94F
-URxvt*color12: #729FCF
-URxvt*color13: #AD7FA8
-URxvt*color14: #34E2E2
-URxvt*color15: #EEEEEC
+URxvt*color8: #000000
+URxvt*color9: #CD0000
+URxvt*color10: #00CD00
+URxvt*color11: #CDCD00
+URxvt*color12: #1E90FF
+URxvt*color13: #CD00CD
+URxvt*color14: #00CDCD
+URxvt*color15: #E5E5E5
 
-URxvt*font: xft:Ubuntu Mono:size=9
+URxvt*color0: #4C4C4C
+URxvt*color1: #FF0000
+URxvt*color2: #00FF00
+URxvt*color3: #FFFF00
+URxvt*color4: #4682B4
+URxvt*color5: #FF00FF
+URxvt*color6: #00FFFF
+URxvt*color7: #FFFFFF
+
+URxvt*font: xft:Ubuntu Mono:size=9,style=regular
 URxvt*boldFont: xft:Ubuntu Mono:bold:size=9
+URxvt*italicFont: xft:Ubuntu Mono:size=9
+URxvt*boldItalicFont:  xft:Ubuntu Mono:bold:size=9
+URxvt*intensityStyles: false
 
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
-URxvt*xftAutoHint: true
-URxvt.urgentOnBell: true
+URxvt*urgentOnBell: true
+
