@@ -1,43 +1,34 @@
-!Xft.autohint: true
-!Xft.antialias: true
-!Xft.hinting: true
-!Xft.hintstyle: hintslight
-!Xft.dpi: 96
-!Xft.rgba: rgb
-!Xft.lcdfilter: lcddefault
+XTerm*bellIsUrgent: true
 
+XTerm*background: #000000
+XTerm*foreground: #FFFFFF
 
-URxvt*scrollBar: false
+XTerm*color0: #000000
+XTerm*color1: #CD0000
+XTerm*color2: #00CD00
+XTerm*color3: #CDCD00
+XTerm*color4: #1E90FF
+XTerm*color5: #CD00CD
+XTerm*color6: #00CDCD
+XTerm*color7: #E5E5E5
 
-URxvt*background: #000000
-URxvt*foreground: #FFFFFF
+XTerm*color8: #4C4C4C
+XTerm*color9: #FF0000
+XTerm*color10: #00FF00
+XTerm*color11: #FFFF00
+XTerm*color12: #4682B4
+XTerm*color13: #FF00FF
+XTerm*color14: #00FFFF
+XTerm*color15: #FFFFFF
 
-URxvt*color8: #000000
-URxvt*color9: #CD0000
-URxvt*color10: #00CD00
-URxvt*color11: #CDCD00
-URxvt*color12: #1E90FF
-URxvt*color13: #CD00CD
-URxvt*color14: #00CDCD
-URxvt*color15: #E5E5E5
+XTerm*font: xft:Ubuntu Mono:size=9,style=regular
+XTerm*boldFont: xft:Ubuntu Mono:bold:size=9
+XTerm*italicFont: xft:Ubuntu Mono:size=9
+XTerm*boldItalicFont:  xft:Ubuntu Mono:bold:size=9
+XTerm*intensityStyles: false
 
-URxvt*color0: #4C4C4C
-URxvt*color1: #FF0000
-URxvt*color2: #00FF00
-URxvt*color3: #FFFF00
-URxvt*color4: #4682B4
-URxvt*color5: #FF00FF
-URxvt*color6: #00FFFF
-URxvt*color7: #FFFFFF
+XTerm*keysym.Home: \033[1~
+XTerm*keysym.End: \033[4~
 
-URxvt*font: xft:Ubuntu Mono:size=9,style=regular
-URxvt*boldFont: xft:Ubuntu Mono:bold:size=9
-URxvt*italicFont: xft:Ubuntu Mono:size=9
-URxvt*boldItalicFont:  xft:Ubuntu Mono:bold:size=9
-URxvt*intensityStyles: false
-
-URxvt*keysym.Home: \033[1~
-URxvt*keysym.End: \033[4~
-
-URxvt*urgentOnBell: true
+XTerm*urgentOnBell: true
 
