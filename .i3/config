@@ -171,6 +171,7 @@ workspace 12 output VGA1
 
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
+for_window [class="XCalc" instance="xcalc"] floating enable
 
 # Startup apps
 exec --no-startup-id numlockx on				# Enable numlock by default
