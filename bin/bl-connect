@@ -4,4 +4,5 @@ device='00:1E:7C:2A:67:92'
 
 rfkill unblock bluetooth
 hcitool dev
+sleep 2
 bluez-test-audio connect ${device}
