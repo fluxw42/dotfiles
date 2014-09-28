@@ -86,33 +86,33 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+ampersand workspace 1
-bindsym $mod+eacute workspace 2
-bindsym $mod+quotedbl workspace 3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+parenleft workspace 5
-bindsym $mod+section workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+exclam workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 10
-bindsym $mod+parenright workspace 11
-bindsym $mod+minus workspace 12
+# switch to workspace using the upper number row with keys 1-0 + ')' and '-'
+bind $mod+10 workspace 1
+bind $mod+11 workspace 2
+bind $mod+12 workspace 3
+bind $mod+13 workspace 4
+bind $mod+14 workspace 5
+bind $mod+15 workspace 6
+bind $mod+16 workspace 7
+bind $mod+17 workspace 8
+bind $mod+18 workspace 9
+bind $mod+19 workspace 10
+bind $mod+20 workspace 11
+bind $mod+21 workspace 12
 
-# move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+section move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+exclam move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
-bindsym $mod+Shift+parenright move container to workspace 11
-bindsym $mod+Shift+minus move container to workspace 12
+# move focused container to workspace, using the same keycodes as the switch command
+bind $mod+Shift+10 move container to workspace 1
+bind $mod+Shift+11 move container to workspace 2
+bind $mod+Shift+12 move container to workspace 3
+bind $mod+Shift+13 move container to workspace 4
+bind $mod+Shift+14 move container to workspace 5
+bind $mod+Shift+15 move container to workspace 6
+bind $mod+Shift+16 move container to workspace 7
+bind $mod+Shift+17 move container to workspace 8
+bind $mod+Shift+18 move container to workspace 9
+bind $mod+Shift+19 move container to workspace 10
+bind $mod+Shift+20 move container to workspace 11
+bind $mod+Shift+21 move container to workspace 12
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -172,6 +172,8 @@ workspace 12 output VGA1
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="XCalc" instance="xcalc"] floating enable
+
+assign [title="cmus"] 12
 
 # Startup apps
 exec --no-startup-id numlockx on				# Enable numlock by default
