@@ -23,10 +23,10 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal (Key 'Return' has code '36')
+# start a terminal (Key 'Return' = 36)
 bind $mod+36 exec i3-sensible-terminal
 
-# kill focused window (Key 'a' has code '24')
+# kill focused window (Key a = 24)
 bind $mod+Shift+24 kill
 
 # start dmenu (a program launcher). (Key 'd' has code '40')
@@ -36,52 +36,34 @@ bind $mod+40 exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+m focus right
+# Use the arrow keys to set focus a window:
+bind $mod+113 focus left
+bind $mod+116 focus down
+bind $mod+111 focus up
+bind $mod+114 focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# Use arrow keys to move focused window:
+bind $mod+Shift+113 move left
+bind $mod+Shift+116 move down
+bind $mod+Shift+111 move up
+bind $mod+Shift+114 move right
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+m move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen
+# split orientation using h and v, fullscreen with f
+bind $mod+43 split h
+bind $mod+55 split v
+bind $mod+41 fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+z layout tabbed
-bindsym $mod+e layout toggle split
+bind $mod+39 layout stacking
+bind $mod+25 layout tabbed
+bind $mod+26 layout toggle split
 
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# toggle tiling / floating and change focus to/from floating window using space
+bind $mod+Shift+65 floating toggle
+bind $mod+65 focus mode_toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+q focus parent
+# focus the parent container (a = 24)
+bind $mod+24 focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -114,12 +96,11 @@ bind $mod+Shift+19 move container to workspace 10
 bind $mod+Shift+20 move container to workspace 11
 bind $mod+Shift+21 move container to workspace 12
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# reload the configuration file or restart i3 inplace
+bind $mod+Shift+54 reload
+bind $mod+Shift+27 restart
+# exit i3 (logs you out of your X session) (Key e = 26)
+bind $mod+Shift+26 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -129,23 +110,17 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym m resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bind 113 resize shrink width 10 px or 10 ppt
+        bind 116 resize grow height 10 px or 10 ppt
+        bind 111 resize shrink height 10 px or 10 ppt
+        bind 114 resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+        bind 36 mode "default"
+        bind 9 mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bind $mod+27 mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
