@@ -1,0 +1,2 @@
+#!/bin/bash
+firefox --new-window "http://build.eict.vpdc/browse/DC"

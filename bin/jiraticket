@@ -1,0 +1,2 @@
+#!/bin/bash
+firefox --new-window "http://jira.eict.vpdc/browse/ERDFG3DC-$(dmenu -p 'Jira ticket number:')"
