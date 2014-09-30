@@ -149,6 +149,7 @@ for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="XCalc" instance="xcalc"] floating enable
 
 assign [title="cmus"] 12
+assign [title="IntelliJ IDEA"] 2
 
 # Startup apps
 exec --no-startup-id numlockx on				# Enable numlock by default
