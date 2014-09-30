@@ -118,4 +118,4 @@ fi
 # the workspace and container. urxvr is one of the only terminals who support this,
 # so set the TERMINAL to urxvt for the i3-sensible-terminal
 PS1="\\007${PS1}"
-TERMINAL=xterm
+TERMINAL=xfce4-terminal

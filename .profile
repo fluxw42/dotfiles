@@ -25,4 +25,4 @@ fi
 sudo chown jme /sys/devices/pci0000:00/0000:00:02.0/backlight/acpi_video0/brightness
 
 # Set the i3-sensible-terminal to xterm because it support the urgent flag
-export TERMINAL=xterm
+export TERMINAL=xfce4-terminal
