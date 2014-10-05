@@ -117,5 +117,5 @@ fi
 # as soon as a command finished. i3wm notifies you when a bell occurs by highlighting
 # the workspace and container. urxvr is one of the only terminals who support this,
 # so set the TERMINAL to urxvt for the i3-sensible-terminal
-PS1="\\007${PS1}"
+PS1="\[\a\]${PS1}"
 TERMINAL=xfce4-terminal
