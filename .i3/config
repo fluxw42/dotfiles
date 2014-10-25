@@ -156,3 +156,6 @@ exec --no-startup-id numlockx on				# Enable numlock by default
 exec --no-startup-id xsetroot -solid "#333333"	# Change the background color to a grayish color
 exec --no-startup-id autoscreen					# Try to autoconfigure the screens
 #exec --no-startup-id nm-applet					# The network manager applet
+
+# Invert the screen when pressing the mail button (easier for the eyes in some cases)
+bind 163 exec xcalib -invert -alter
