@@ -1,0 +1,6 @@
+#!/bin/sh
+
+device='00:1E:7C:2A:67:92'
+
+sudo hcitool dc ${device} 19 # Reason code 19 means 'Terminated by user'
+rfkill block bluetooth

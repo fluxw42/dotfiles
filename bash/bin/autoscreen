@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ $(xrandr | grep " connected " | wc -l) -eq 3 ]; then
+	dualscreen
+else
+	singlescreen
+fi

@@ -1,0 +1,6 @@
+#!/bin/sh
+pass_folder=~/.password-store
+dst_file=~/dotfiles/pass.tar.gz.gpg
+recipient=jeroen.meulemeester@gmail.com
+
+tar -cvzp ${pass_folder} | gpg --batch --yes --output ${dst_file} --recipient ${recipient} --encrypt

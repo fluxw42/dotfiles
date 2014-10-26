@@ -1,0 +1,26 @@
+[Configuration]
+MiscAlwaysShowTabs=FALSE
+MiscBell=TRUE
+MiscBordersDefault=TRUE
+MiscCursorBlinks=TRUE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_UNDERLINE
+MiscDefaultGeometry=80x24
+MiscInheritGeometry=FALSE
+MiscMenubarDefault=FALSE
+MiscMouseAutohide=FALSE
+MiscToolbarDefault=FALSE
+MiscConfirmClose=FALSE
+MiscCycleTabs=TRUE
+MiscTabCloseButtons=TRUE
+MiscTabCloseMiddleClick=TRUE
+MiscTabPosition=GTK_POS_TOP
+MiscHighlightUrls=TRUE
+MiscScrollAlternateScreen=TRUE
+FontName=Ubuntu Mono 9
+TitleMode=TERMINAL_TITLE_REPLACE
+ColorCursor=#ffffffffffff
+ColorBackground=#000000000000
+ColorForeground=#ffffffffffff
+ColorPalette=#000000000000;#cdcd00000000;#0000cdcd0000;#cdcdcdcd0000;#1e1e9090ffff;#cdcd0000cdcd;#0000cdcdcdcd;#e5e5e5e5e5e5;#4c4c4c4c4c4c;#ffff00000000;#0000ffff0000;#ffffffff0000;#46468282b4b4;#ffff0000ffff;#0000ffffffff;#ffffffffffff
+ScrollingOnOutput=FALSE
+
