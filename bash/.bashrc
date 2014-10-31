@@ -119,4 +119,3 @@ fi
 # so set the TERMINAL to urxvt for the i3-sensible-terminal
 PS1="\[\a\]${PS1}"
 TERMINAL=xfce4-terminal
-CDPATH=${CDPATH}:~/gitrepository:~/svnrepository:~:
