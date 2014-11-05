@@ -160,3 +160,5 @@ exec --no-startup-id autoscreen			# Try to autoconfigure the screens
 
 # Invert the screen when pressing the mail button (easier for the eyes in some cases)
 bind 163 exec xcalib -invert -alter
+
+bindsym $mod+Shift+b [class="^.*"] border toggle
