@@ -16,3 +16,5 @@ set hlsearch
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
+
+au BufNewFile,BufRead *.bb setf sh
