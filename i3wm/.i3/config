@@ -162,4 +162,8 @@ bind 163 exec xcalib -invert -alter
 bind 232 exec xbacklight -10 -time 100 -steps 10
 bind 233 exec xbacklight +10 -time 100 -steps 10
 
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec mute_toggle
+
 bindsym $mod+Shift+b [class="^.*"] border toggle

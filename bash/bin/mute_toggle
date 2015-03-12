@@ -1,0 +1,14 @@
+#!/bin/sh
+
+amixer sget Master | grep "\[off\]"
+if [ $? -ne 0 ]; then
+	state="mute"
+else
+	state="unmute"
+fi
+
+amixer -q set "Master" ${state}
+amixer -q set "Headphone" ${state}
+amixer -q set "Speaker" ${state}
+amixer -q set "Bass Speaker" ${state}
+

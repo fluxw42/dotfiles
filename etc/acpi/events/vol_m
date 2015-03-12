@@ -1,2 +1,0 @@
-event=button/mute
-action=/etc/acpi/handlers/vol M
