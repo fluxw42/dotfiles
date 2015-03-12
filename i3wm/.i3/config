@@ -152,7 +152,6 @@ assign [title="cmus"] 12
 assign [title="IntelliJ IDEA"] 2
 
 # Startup apps
-exec compton -CGb				# The compositor I use is compton
 exec --no-startup-id numlockx on		# Enable numlock by default
 exec --no-startup-id hsetroot -solid "#333333"	# Change the background color to a grayish color
 exec --no-startup-id autoscreen			# Try to autoconfigure the screens
@@ -160,5 +159,7 @@ exec --no-startup-id autoscreen			# Try to autoconfigure the screens
 
 # Invert the screen when pressing the mail button (easier for the eyes in some cases)
 bind 163 exec xcalib -invert -alter
+bind 232 exec xbacklight -10 -time 100 -steps 10
+bind 233 exec xbacklight +10 -time 100 -steps 10
 
 bindsym $mod+Shift+b [class="^.*"] border toggle
