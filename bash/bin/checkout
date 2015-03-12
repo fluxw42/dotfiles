@@ -1,0 +1,22 @@
+#!/bin/sh
+
+SERVER=git
+USER=git
+SEARCH="${1}"
+
+MATCHING_REPOS=`ssh "${USER}"@"${SERVER}" | grep "${SEARCH}" | cut -b 6-`
+MATCHING_COUNT=`echo "${MATCHING_REPOS}" | wc -l`
+
+echo
+
+if [ "${MATCHING_COUNT}" -gt 1 ]; then
+	echo "Found [${MATCHING_COUNT}] repo's matching [${SEARCH}]:"
+	echo
+	echo "${MATCHING_REPOS}"
+	echo
+	return
+fi
+
+FOLDER_NAME=`basename "${MATCHING_REPOS}"`
+echo "Cloning repository [${MATCHING_REPOS}] to folder [${FOLDER_NAME}]"
+git clone "${USER}"@"${SERVER}":"${MATCHING_REPOS}" "${FOLDER_NAME}"
