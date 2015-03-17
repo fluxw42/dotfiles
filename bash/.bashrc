@@ -125,3 +125,4 @@ calc() {
 	echo "$@" | bc
 }
 
+alias vim-modified="vim -p \`git status --porcelain | awk '{print \$2}'\`"
