@@ -23,4 +23,5 @@ ColorBackground=#000000000000
 ColorForeground=#ffffffffffff
 ColorPalette=#000000000000;#cdcd00000000;#0000cdcd0000;#cdcdcdcd0000;#1e1e9090ffff;#cdcd0000cdcd;#0000cdcdcdcd;#e5e5e5e5e5e5;#4c4c4c4c4c4c;#ffff00000000;#0000ffff0000;#ffffffff0000;#46468282b4b4;#ffff0000ffff;#0000ffffffff;#ffffffffffff
 ScrollingOnOutput=FALSE
+ScrollingLines=999999
 
