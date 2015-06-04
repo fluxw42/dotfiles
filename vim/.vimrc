@@ -17,4 +17,5 @@ set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 
-au BufNewFile,BufRead *.bb setf sh
+au BufRead,BufNewFile *.bb set filetype=sh
+au BufRead,BufNewFile *.bbappend set filetype=sh
