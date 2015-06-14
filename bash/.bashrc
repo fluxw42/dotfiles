@@ -119,6 +119,7 @@ fi
 # so set the TERMINAL to urxvt for the i3-sensible-terminal
 PS1="\[\a\]${PS1}"
 TERMINAL=xfce4-terminal
+PROMPT_DIRTRIM=2
 
 # Simple function to caluculate things on the command line
 calc() {
