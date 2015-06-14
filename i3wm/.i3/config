@@ -147,6 +147,8 @@ workspace 12 output VGA1
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="XCalc" instance="xcalc"] floating enable
+for_window [class="^Spotify$"] floating enable
+for_window [class="^Spotify Premium$"] floating enable
 
 assign [title="cmus"] 12
 assign [title="IntelliJ IDEA"] 2
