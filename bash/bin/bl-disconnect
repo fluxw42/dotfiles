@@ -1,6 +1,7 @@
 #!/bin/sh
 
-device='00:1E:7C:2A:67:92'
+#device='00:1E:7C:2A:67:92'
+device='CC:52:AF:09:CA:7A'
 
 sudo hcitool dc ${device} 19 # Reason code 19 means 'Terminated by user'
 rfkill block bluetooth

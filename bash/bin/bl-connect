@@ -1,6 +1,9 @@
 #!/bin/sh
 
-local_dev='00:15:83:42:B2:40'
+set -x
+
+#local_dev='00:15:83:42:B2:40'
+local_dev='CC:52:AF:09:CA:7A'
 audio_dev='00:1E:7C:2A:67:92'
 
 rfkill unblock bluetooth
@@ -17,7 +20,9 @@ if [ -z $rfkill_id ]; then
 	exit 2
 fi
 
-rfkill block bluetooth
+#rfkill block bluetooth
 rfkill unblock ${rfkill_id}
+sleep 2
+sudo bluez-simple-agent hci0 ${audio_dev}
 sleep 2
 bluez-test-audio -i ${hci_dev} connect ${audio_dev}
