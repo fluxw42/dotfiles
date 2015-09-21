@@ -19,3 +19,5 @@ set directory=~/.vim/tmp
 
 au BufRead,BufNewFile *.bb set filetype=sh
 au BufRead,BufNewFile *.bbappend set filetype=sh
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
