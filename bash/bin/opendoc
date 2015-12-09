@@ -1,0 +1,6 @@
+#!/bin/sh
+
+file="`find /home/jme/Desktop /home/jme/Documents -type f -iname \"*.pdf\" | sort | dmenu -i -l 15`"
+if [ ! -z "$file" ]; then
+	evince "${file}"
+fi
