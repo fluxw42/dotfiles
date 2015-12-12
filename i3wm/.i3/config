@@ -69,6 +69,7 @@ bind $mod+24 focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace using the upper number row with keys 1-0 + ')' and '-'
+bind $mod+49 workspace 0
 bind $mod+10 workspace 1
 bind $mod+11 workspace 2
 bind $mod+12 workspace 3
@@ -83,6 +84,7 @@ bind $mod+20 workspace 11
 bind $mod+21 workspace 12
 
 # move focused container to workspace, using the same keycodes as the switch command
+bind $mod+Shift+49 move container to workspace 0
 bind $mod+Shift+10 move container to workspace 1
 bind $mod+Shift+11 move container to workspace 2
 bind $mod+Shift+12 move container to workspace 3
