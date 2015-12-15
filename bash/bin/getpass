@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd ~/.password-store
+passfile=`find . -type f | grep "\.gpg$" | sort | dmenu -i -l 15`
+if [ -z "$passfile" ]; then
+	exit 1
+fi
+
+passfile="${passfile:2}"
+passfile="${passfile%????}"
+
+pass show --clip "${passfile}"
+if [ $? -ne 0 ]; then
+	notify-send -u critical "Failed to copy password of [${passfile}] to clipboard!"
+else
+	notify-send -u normal "Copied password of [${passfile}] to clipboard."
+fi
