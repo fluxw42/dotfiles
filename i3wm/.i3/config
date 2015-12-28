@@ -23,6 +23,9 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Use the single pixel border, without title bar for maximum usable surface
+new_window pixel
+
 # start a terminal (Key 'Return' = 36)
 bind $mod+36 exec i3-sensible-terminal
 
