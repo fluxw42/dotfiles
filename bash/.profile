@@ -23,3 +23,7 @@ fi
 
 # Set the i3-sensible-terminal to xterm because it support the urgent flag
 export TERMINAL=xfce4-terminal
+
+# Use vim as preferred editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
