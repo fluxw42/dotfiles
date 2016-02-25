@@ -2,4 +2,4 @@
 
 set -e
 
-cd /usr/local/wps-office && ./wps
+cd /usr/local/wps-office && ./wpp
