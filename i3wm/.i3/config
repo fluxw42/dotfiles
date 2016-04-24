@@ -163,7 +163,7 @@ assign [title="IntelliJ IDEA"] 2
 # Startup apps
 exec --no-startup-id compton -CGb
 exec --no-startup-id numlockx on		# Enable numlock by default
-exec --no-startup-id hsetroot -solid "#333333"	# Change the background color to a grayish color
+exec --no-startup-id nitrogen --restore		# Restore background
 exec --no-startup-id autoscreen			# Try to autoconfigure the screens
 exec --no-startup-id nm-applet			# The network manager applet
 exec --no-startup-id start-pulseaudio-x11	# Start PA in background to prevent delay on first use
