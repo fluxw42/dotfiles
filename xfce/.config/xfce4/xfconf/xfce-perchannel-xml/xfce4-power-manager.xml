@@ -18,5 +18,6 @@
     <property name="dpms-on-ac-off" type="uint" value="0"/>
     <property name="sleep-button-action" type="uint" value="3"/>
     <property name="hibernate-button-action" type="uint" value="3"/>
+    <property name="general-notification" type="bool" value="false"/>
   </property>
 </channel>
