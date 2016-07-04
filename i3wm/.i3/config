@@ -133,46 +133,45 @@ bar {
         status_command i3status
 }
 
-# 5 Workspaces on DP1, located left of VGA1
-workspace 0 output DP1
-workspace 1 output DP1
-workspace 2 output DP1
-workspace 3 output DP1
-workspace 4 output DP1
-workspace 5 output DP1
+# 5 Workspaces on HDMI1, located left of DP5
+workspace 0 output HDMI1
+workspace 1 output HDMI1
+workspace 2 output HDMI1
+workspace 3 output HDMI1
+workspace 4 output HDMI1
+workspace 5 output HDMI1
 
-# 5 Workspaces on VGA1, located right of DP1
-workspace 6 output HDMI2
-workspace 7 output HDMI2
-workspace 8 output HDMI2
-workspace 9 output HDMI2
-workspace 10 output HDMI2
-workspace 11 output HDMI2
-workspace 12 output HDMI2
+# 5 Workspaces on DP5, located right of HDMI1
+workspace 6 output DP5
+workspace 7 output DP5
+workspace 8 output DP5
+workspace 9 output DP5
+workspace 10 output DP5
+
+# 2 Workspaces on the embedded screen, eDP1, right of DP5
+workspace 11 output eDP1
+workspace 12 output eDP1
 
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
-for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="Nemo" instance="file_progress"] floating enable
 for_window [class="XCalc" instance="xcalc"] floating enable
-for_window [class="^Spotify$"] floating enable
-for_window [class="^Spotify Premium$"] floating enable
 
 assign [title="cmus"] 12
 assign [title="IntelliJ IDEA"] 2
 
 # Startup apps
-exec --no-startup-id compton -CGb
 exec --no-startup-id numlockx on		# Enable numlock by default
-exec --no-startup-id nitrogen --restore		# Restore background
+exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id autoscreen			# Try to autoconfigure the screens
 exec --no-startup-id nm-applet			# The network manager applet
+exec --no-startup-id xfce4-power-manager	# The power manager applet
 exec --no-startup-id start-pulseaudio-x11	# Start PA in background to prevent delay on first use
 exec --no-startup-id xautolock -time 5 -locker /home/jme/bin/lockscreen &
 
-# Invert the screen when pressing the mail button (easier for the eyes in some cases)
-bind 163 exec xcalib -invert -alter
-bind 232 exec xbacklight -10 -time 100 -steps 10
-bind 233 exec xbacklight +10 -time 100 -steps 10
+# Invert the screen when pressing the 'calculator' button (easier for the eyes in some cases)
+bind 148 exec xcalib -invert -alter
+#bind 232 exec xbacklight -10 -time 100 -steps 10
+#bind 233 exec xbacklight +10 -time 100 -steps 10
 
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
