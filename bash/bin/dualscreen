@@ -1,12 +1,10 @@
 #!/bin/sh
 
-# EliteDisplay: HDMI1 1920x1080 60Hz
-# Dell VGA:     DP5   1280x1024 60Hz
-# Laptop:       eDP1  1920x1080 60.02Hz
+# HP EliteDisplay: HDMI1 1920x1080 60Hz
+# Dell P2217H:     DP5   1920x1080 60Hz
+# Laptop:          eDP1  1920x1080 60.02Hz
 
-xrandr --addmode DP5 1280x1024
-
-xrandr --output HDMI1 --mode 1920x1080 --rate 60                     --scale 1x1
-xrandr --output DP5   --mode 1280x1024 --rate 60    --right-of HDMI1 --scale 1x1
-xrandr --output eDP1  --mode 1920x1080 --rate 60.02 --right-of DP5   --scale 1x1
+xrandr --output HDMI1 --mode 1920x1080 --rate 60                     --scale 1x1 --rotate normal
+xrandr --output DP5   --mode 1920x1080 --rate 60    --right-of HDMI1 --scale 1x1 --rotate normal
+xrandr --output eDP1  --mode 1920x1080 --rate 60.02 --right-of DP5   --scale 1x1 --rotate normal
 
