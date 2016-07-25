@@ -164,6 +164,7 @@ exec --no-startup-id numlockx on		# Enable numlock by default
 exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id autoscreen			# Try to autoconfigure the screens
 exec --no-startup-id nm-applet			# The network manager applet
+exec --no-startup-id blueman-applet		# The bluetooth applet
 exec --no-startup-id xfce4-power-manager	# The power manager applet
 exec --no-startup-id start-pulseaudio-x11	# Start PA in background to prevent delay on first use
 exec --no-startup-id xautolock -time 5 -locker /home/jme/bin/lockscreen &
