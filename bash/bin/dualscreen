@@ -4,7 +4,11 @@
 # Dell P2217H:     DP5   1920x1080 60Hz
 # Laptop:          eDP1  1920x1080 60.02Hz
 
-xrandr --output HDMI1 --mode 1920x1080 --rate 60                     --scale 1x1 --rotate normal
-xrandr --output DP5   --mode 1920x1080 --rate 60    --right-of HDMI1 --scale 1x1 --rotate normal
-xrandr --output eDP1  --mode 1920x1080 --rate 60.02 --right-of DP5   --scale 1x1 --rotate normal
+HP_ELITE_DISPLAY=HDMI1
+DELL_P2217H=DP5
+LAPTOP=eDP1
+
+xrandr --output ${HP_ELITE_DISPLAY} --mode 1920x1080 --rate 60                                   --scale 1x1 --rotate normal
+xrandr --output ${DELL_P2217H}      --mode 1920x1080 --rate 60    --right-of ${HP_ELITE_DISPLAY} --scale 1x1 --rotate normal
+xrandr --output ${LAPTOP}           --mode 1920x1080 --rate 60.02 --right-of ${DELL_P2217H}      --scale 1x1 --rotate normal
 
