@@ -71,35 +71,49 @@ bind $mod+24 focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+set $ws00 "0: Misc"
+set $ws01 "1: Browser"
+set $ws02 "2: IDE"
+set $ws03 "3: Terminals"
+set $ws04 "4"
+set $ws05 "5"
+set $ws06 "6"
+set $ws07 "7"
+set $ws08 "8"
+set $ws09 "9"
+set $ws10 "10: Logging"
+set $ws11 "11: Chat"
+set $ws12 "12: Music"
+
 # switch to workspace using the upper number row with keys 1-0 + ')' and '-'
-bind $mod+49 workspace 0
-bind $mod+10 workspace 1
-bind $mod+11 workspace 2
-bind $mod+12 workspace 3
-bind $mod+13 workspace 4
-bind $mod+14 workspace 5
-bind $mod+15 workspace 6
-bind $mod+16 workspace 7
-bind $mod+17 workspace 8
-bind $mod+18 workspace 9
-bind $mod+19 workspace 10
-bind $mod+20 workspace 11
-bind $mod+21 workspace 12
+bind $mod+49 workspace $ws00
+bind $mod+10 workspace $ws01
+bind $mod+11 workspace $ws02
+bind $mod+12 workspace $ws03
+bind $mod+13 workspace $ws04
+bind $mod+14 workspace $ws05
+bind $mod+15 workspace $ws06
+bind $mod+16 workspace $ws07
+bind $mod+17 workspace $ws08
+bind $mod+18 workspace $ws09
+bind $mod+19 workspace $ws10
+bind $mod+20 workspace $ws11
+bind $mod+21 workspace $ws12
 
 # move focused container to workspace, using the same keycodes as the switch command
-bind $mod+Shift+49 move container to workspace 0
-bind $mod+Shift+10 move container to workspace 1
-bind $mod+Shift+11 move container to workspace 2
-bind $mod+Shift+12 move container to workspace 3
-bind $mod+Shift+13 move container to workspace 4
-bind $mod+Shift+14 move container to workspace 5
-bind $mod+Shift+15 move container to workspace 6
-bind $mod+Shift+16 move container to workspace 7
-bind $mod+Shift+17 move container to workspace 8
-bind $mod+Shift+18 move container to workspace 9
-bind $mod+Shift+19 move container to workspace 10
-bind $mod+Shift+20 move container to workspace 11
-bind $mod+Shift+21 move container to workspace 12
+bind $mod+Shift+49 move container to workspace $ws00
+bind $mod+Shift+10 move container to workspace $ws01
+bind $mod+Shift+11 move container to workspace $ws02
+bind $mod+Shift+12 move container to workspace $ws03
+bind $mod+Shift+13 move container to workspace $ws04
+bind $mod+Shift+14 move container to workspace $ws05
+bind $mod+Shift+15 move container to workspace $ws06
+bind $mod+Shift+16 move container to workspace $ws07
+bind $mod+Shift+17 move container to workspace $ws08
+bind $mod+Shift+18 move container to workspace $ws09
+bind $mod+Shift+19 move container to workspace $ws10
+bind $mod+Shift+20 move container to workspace $ws11
+bind $mod+Shift+21 move container to workspace $ws12
 
 # reload the configuration file or restart i3 inplace
 bind $mod+Shift+54 reload
@@ -134,30 +148,30 @@ bar {
 }
 
 # 5 Workspaces on HDMI1, located left of DP5
-workspace 0 output HDMI1
-workspace 1 output HDMI1
-workspace 2 output HDMI1
-workspace 3 output HDMI1
-workspace 4 output HDMI1
-workspace 5 output HDMI1
+workspace $ws00 output HDMI1
+workspace $ws01 output HDMI1
+workspace $ws02 output HDMI1
+workspace $ws03 output HDMI1
+workspace $ws04 output HDMI1
+workspace $ws05 output HDMI1
 
 # 5 Workspaces on DP5, located right of HDMI1
-workspace 6 output DP5
-workspace 7 output DP5
-workspace 8 output DP5
-workspace 9 output DP5
-workspace 10 output DP5
+workspace $ws06 output DP5
+workspace $ws07 output DP5
+workspace $ws08 output DP5
+workspace $ws09 output DP5
+workspace $ws10 output DP5
 
 # 2 Workspaces on the embedded screen, eDP1, right of DP5
-workspace 11 output eDP1
-workspace 12 output eDP1
+workspace $ws11 output eDP1
+workspace $ws12 output eDP1
 
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 for_window [class="Nemo" instance="file_progress"] floating enable
 for_window [class="XCalc" instance="xcalc"] floating enable
 
-assign [title="cmus"] 12
-assign [title="IntelliJ IDEA"] 2
+assign [title="cmus"] $ws12
+assign [title="IntelliJ IDEA"] $ws02
 
 # Startup apps
 exec --no-startup-id numlockx on		# Enable numlock by default
