@@ -71,6 +71,10 @@ bind $mod+24 focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+set $screen1 "HDMI-1"
+set $screen2 "DP-3"
+set $screen3 "eDP-1"
+
 set $ws00 "0: Misc"
 set $ws01 "1: Browser"
 set $ws02 "2: IDE"
@@ -148,23 +152,23 @@ bar {
 }
 
 # 5 Workspaces on HDMI1, located left of DP5
-workspace $ws00 output HDMI1
-workspace $ws01 output HDMI1
-workspace $ws02 output HDMI1
-workspace $ws03 output HDMI1
-workspace $ws04 output HDMI1
-workspace $ws05 output HDMI1
+workspace $ws00 output $screen1
+workspace $ws01 output $screen1
+workspace $ws02 output $screen1
+workspace $ws03 output $screen1
+workspace $ws04 output $screen1
+workspace $ws05 output $screen1
 
 # 5 Workspaces on DP5, located right of HDMI1
-workspace $ws06 output DP5
-workspace $ws07 output DP5
-workspace $ws08 output DP5
-workspace $ws09 output DP5
-workspace $ws10 output DP5
+workspace $ws06 output $screen2
+workspace $ws07 output $screen2
+workspace $ws08 output $screen2
+workspace $ws09 output $screen2
+workspace $ws10 output $screen2
 
 # 2 Workspaces on the embedded screen, eDP1, right of DP5
-workspace $ws11 output eDP1
-workspace $ws12 output eDP1
+workspace $ws11 output $screen3
+workspace $ws12 output $screen3
 
 for_window [class="Gcalctool" instance="gcalctool"] floating enable
 for_window [class="Nemo" instance="file_progress"] floating enable
