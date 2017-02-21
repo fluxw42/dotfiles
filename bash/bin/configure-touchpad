@@ -1,0 +1,4 @@
+#! /bin/sh
+
+synclient VertEdgeScroll=0
+synclient VertScrollDelta=-64

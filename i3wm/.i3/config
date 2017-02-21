@@ -181,6 +181,7 @@ assign [title="IntelliJ IDEA"] $ws02
 exec --no-startup-id numlockx on		# Enable numlock by default
 exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id autoscreen			# Try to autoconfigure the screens
+exec --no-startup-id configure-touchpad		# Configure the touchpad
 exec --no-startup-id nm-applet			# The network manager applet
 exec --no-startup-id blueman-applet		# The bluetooth applet
 exec --no-startup-id xfce4-power-manager	# The power manager applet
