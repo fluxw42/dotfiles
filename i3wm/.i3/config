@@ -133,14 +133,15 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bind 113 resize shrink width 10 px or 10 ppt
-        bind 116 resize grow height 10 px or 10 ppt
-        bind 111 resize shrink height 10 px or 10 ppt
-        bind 114 resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Up resize grow height 10 px or 10 ppt
+        bindsym Down resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
-        bind 36 mode "default"
-        bind 9 mode "default"
+        bindsym Escape mode "default"
+        bindsym Return mode "default"
+        bindsym KP_Enter mode "default"
 }
 
 bind $mod+27 mode "resize"
@@ -178,8 +179,10 @@ assign [title="cmus"] $ws12
 assign [title="IntelliJ IDEA"] $ws02
 
 # Startup apps
+exec --no-startup-id compton -CGb		# Composition manager
 exec --no-startup-id numlockx on		# Enable numlock by default
 exec --no-startup-id xsetroot -solid "#333333"
+exec --no-startup-id feh --bg-scale /home/jme/Pictures/wolf-bg.png
 exec --no-startup-id autoscreen			# Try to autoconfigure the screens
 exec --no-startup-id configure-touchpad		# Configure the touchpad
 exec --no-startup-id nm-applet			# The network manager applet
